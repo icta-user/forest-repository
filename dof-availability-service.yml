@@ -16,6 +16,7 @@ spring:
    database: ForestDB
    password: g+H1ppDyrXldSwoLBo6c6Q==
    host: localhost
+   
    port: 27017
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
@@ -41,7 +42,7 @@ eureka:
     #leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://192.168.12.135:8761/eureka/,http://192.168.12.136:8761/eureka/
     healthcheck:
       enabled: false
    # lease:
