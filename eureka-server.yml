@@ -8,25 +8,24 @@ server:
 # for server discovery
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.12.135
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/       
+      defaultZone: http://192.168.12.136:8761/eureka/       
       
 ---
 
-spring:
-  profiles: docker
+
 eureka:
   instance:
-    hostname: docker
+    hostname: 192.168.12.136
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  
+      defaultZone: http://192.168.12.135:8761/eureka/  
       
 logging:
  file: Eureka.log
