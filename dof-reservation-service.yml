@@ -17,6 +17,7 @@ spring:
    password: g+H1ppDyrXldSwoLBo6c6Q==
    host: localhost
    port: 27017
+   uri: mongodb://dofuser:Mzw4#12@192.168.12.137:27017,192.168.12.138:27017,192.168.12.136:27017/ForestDB?replicaSet=dof
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
    serverSelectionTimeout: 30000
@@ -51,7 +52,7 @@ eureka:
     #leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://192.168.12.135:8761/eureka/,http://192.168.12.136:8761/eureka/
     healthcheck:
       enabled: false
     #lease:
