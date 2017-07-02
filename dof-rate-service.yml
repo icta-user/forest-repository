@@ -25,7 +25,7 @@ spring:
    password: g+H1ppDyrXldSwoLBo6c6Q==
    host: localhost
    port: 27017
-   uri: mongodb://dofuser:Mzw4#12@192.168.12.137:27017,192.168.12.138:27017,192.168.12.136:27017/ForestDB?replicaSet=dof
+   uri1: mongodb://dofuser:Mzw4#12@192.168.12.137:27017,192.168.12.138:27017,192.168.12.136:27017/ForestDB?replicaSet=dof
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
    serverSelectionTimeout: 30000
