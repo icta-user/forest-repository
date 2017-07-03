@@ -3,35 +3,20 @@ configuration:
 #Payment Service Port
 server:
  port: 8098
-
-#Database properties
-#spring:
- #data:
-  #mongodb:
-   #database: ForestDB
-   #host: localhost
-   #port: 27017
    
-#logging:
- #file: Payment.log
- #level: INFO
-log4j:
-  logger:
-    org:
-      springframework:
-        ALL
- 
+logging:
+ file: MaslPayment.log
+ level: INFO
 
 # MongoDB Properties 
 spring:
  data:
   mongodb:
-   dbuser: dofuser
-   database: ForestDB
+   dbuser: masluser
+   database: MahaweliDB
    password: g+H1ppDyrXldSwoLBo6c6Q==
    host: localhost
    port: 27017
-   uri1: mongodb://dofuser:Mzw4#12@192.168.12.137:27017,192.168.12.138:27017,192.168.12.136:27017/ForestDB?replicaSet=dof
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
    serverSelectionTimeout: 30000
@@ -52,15 +37,15 @@ spring:
 eureka:
   instance:
     preferIpAddress: true
-    #leaseRenewalIntervalInSeconds: 1
-    #leaseExpirationDurationInSeconds: 2
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: http://192.168.12.135:8761/eureka/,http://192.168.12.136:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     healthcheck:
       enabled: false
-    #lease:
-      #duration: 5
+    lease:
+      duration: 5
       
 envirnment: test
 #envirnment: production
@@ -78,10 +63,9 @@ ntb:
   iPGServerURL: https://www.ipayamex.lk/ipg/servlet_pay
   action: SaleTxn
   currencyCode: LKR
-  merchantID: FORESTDPT
+  merchantID: MAHAWELIAUTH
   languageCode: en
-  keyPath: C:\\merchant\\keys\\
-  logPath: C:\\merchant\\keys\\logs\\
-
-  #keyPath = /opt/cert/ntbpg/keys/
-  #logPath = /opt/cert/ntbpg/keys/logs/
+  keyPath: /opt/cert/ntbpg/keys/
+  logPath: /opt/cert/ntbpg/keys/logs/
+  #keyPath: C:\\merchant\\keys\\
+  #logPath: C:\\merchant\\keys\\logs\\
