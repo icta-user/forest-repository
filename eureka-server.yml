@@ -13,7 +13,9 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://192.168.12.136:8761/eureka/,http://192.168.12.135:8761/eureka/        
+      defaultZone: http://192.168.12.136:8761/eureka/,http://192.168.12.135:8761/eureka/    
+    server:
+      enable-self-preservation: false
       
 ---
 
@@ -26,6 +28,8 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://192.168.12.135:8761/eureka/,http://192.168.12.136:8761/eureka/  
+    server:
+      enable-self-preservation: false
       
 logging:
  file: Eureka.log
