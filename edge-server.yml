@@ -58,7 +58,7 @@ zuul:
     dof-permission-service:
           path: /forestpermission/**
           serviceId: dof-permission-service
-  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin 
+  #ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin 
 
   
 eureka:
