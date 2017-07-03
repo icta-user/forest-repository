@@ -7,6 +7,8 @@ server:
 # Defines the Eureka server that is used by the Netflix OSS components to use as the registry
 # for server discovery
 eureka:
+  instance:
+    hostname: 192.168.12.135
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -14,18 +16,20 @@ eureka:
       defaultZone: http://192.168.12.136:8761/eureka/,http://192.168.12.135:8761/eureka/    
     server:
       enable-self-preservation: false
-
----
-eureka:
-  instance:
-    hostname: 192.168.12.135
-     
+      
 ---
 
 
 eureka:
   instance:
     hostname: 192.168.12.136
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://192.168.12.135:8761/eureka/,http://192.168.12.136:8761/eureka/  
+    server:
+      enable-self-preservation: false
  
       
 logging:
