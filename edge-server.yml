@@ -115,7 +115,7 @@ tokenId: DOFTokenId
 clientLogin : /forestuser/user/clientLogin
 adminLogin : /forestuser/user/login
 
-authorizedHosts: masl.lgcc.gov.lk,192.168.12.135
+authorizedHosts: masl.lgcc.gov.lk,192.168.12.135,192.168.12.132,192.168.12.131
     
 
     
