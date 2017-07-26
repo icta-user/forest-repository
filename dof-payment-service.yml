@@ -69,4 +69,4 @@ ntb:
   keyPath: /opt/cert/ntbpg/keys/
   logPath: /opt/cert/ntbpg/keys/logs/
   
-reservationURL : http://masl-reservation-service/regions/001/bungalows/001/reservations/
+reservationURL : http://dof-reservation-service/regions/001/bungalows/001/reservations/
