@@ -68,7 +68,7 @@ management:
     mode: full
     
 deductions:
-  additionalTaxes : 7.5,10.5
-  convenienceFee-sampath : 2.2
-  convenienceFee-ntb : 3.25
-  vatPercentage : 17.5
+  additionalTaxes : 
+  convenienceFee-sampath : 2
+  convenienceFee-ntb : 4
+  vatPercentage : 9.5
