@@ -115,7 +115,7 @@ tokenId: DOFTokenId
 clientLogin : /forestuser/user/clientLogin
 adminLogin : /forestuser/user/login
 
-authorizedHosts: https://192.168.12.141/dof/
+authorizedHosts: https://eservices.forestdept.gov.lk/dof/
     
 
     
