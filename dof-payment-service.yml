@@ -48,8 +48,8 @@ eureka:
     lease:
       duration: 5
       
-#envirnment: test
-envirnment: production
+envirnment: test
+#envirnment: production
 
 # Sampath Payment Gateway Operations
 sampath:
